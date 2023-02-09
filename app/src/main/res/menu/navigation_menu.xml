@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_task"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="Task">
+        <menu>
+            <item
+                android:id="@+id/addtask"
+                android:icon="@android:drawable/ic_menu_add"
+                android:title="Add Task"/>
+            <item
+                android:id="@+id/refresh"
+                android:icon="@android:drawable/ic_popup_sync"
+                android:title="Refresh" />
+
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menu_cef"
+        android:icon="@android:drawable/checkbox_on_background"
+        android:title="CEF" />
+    <item
+        android:id="@+id/menu_crm"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="CRM" />
+    <item
+        android:id="@+id/menu_leave"
+        android:icon="@android:drawable/ic_input_get"
+        android:title="Leave" />
+    <item
+        android:id="@+id/menu_logout"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="Logout" />
+</menu>

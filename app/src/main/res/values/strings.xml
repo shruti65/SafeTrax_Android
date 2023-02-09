@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">SafeTrax</string>
+    <string-array name="dept">
+        <item>Finance</item>
+        <item>It</item>
+        <item>Management</item>
+    </string-array>
+    <string-array name="cate1">
+        <item>AFin</item>
+        <item>BFin</item>
+        <item>CFin</item>
+    </string-array>
+    <string-array name="cate">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+    </string-array>
+    <string-array name="task">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="group">
+        <item>aa</item>
+        <item>bb</item>
+        <item>cc</item>
+    </string-array>
+    <string-array name="plans">
+        <item>AAA</item>
+        <item>BBB</item>
+        <item>CCC</item>
+    </string-array>
+    <string-array name="nation">
+        <item>Indian</item>
+        <item>British</item>
+        <item>American</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
