@@ -10,6 +10,11 @@
                 android:id="@+id/addtask"
                 android:icon="@android:drawable/ic_menu_add"
                 android:title="Add Task"/>
+
+            <item
+                android:id="@+id/viewtask"
+                android:icon="@android:drawable/ic_menu_view"
+                android:title="View Task" />
             <item
                 android:id="@+id/refresh"
                 android:icon="@android:drawable/ic_popup_sync"
@@ -18,9 +23,24 @@
         </menu>
     </item>
     <item
-        android:id="@+id/menu_cef"
+        android:id="@+id/menu_cefs"
         android:icon="@android:drawable/checkbox_on_background"
-        android:title="CEF" />
+        android:title="CEF" >
+        <menu>
+            <item
+                android:id="@+id/menu_cef"
+                android:icon="@android:drawable/checkbox_on_background"
+                android:title="ADD cef" />
+            <item
+                android:id="@+id/menu_cefList"
+                android:icon="@android:drawable/ic_menu_agenda"
+                android:title="CEF List" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menu_claim"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:title="Claim" />
     <item
         android:id="@+id/menu_crm"
         android:icon="@android:drawable/ic_menu_agenda"

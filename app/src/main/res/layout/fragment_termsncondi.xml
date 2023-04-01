@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    tools:context=".termsncondi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background=" #B79C70"
+            android:text="Terms and Conditions"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="#4A587B"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/domestic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Domestic Clients"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/nri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="NRI Clients"
+                android:textSize="14sp" />
+        </RadioGroup>
+
+        <TableLayout
+            android:id="@+id/domestictable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#B79C70">
+
+                <TextView
+                    android:id="@+id/textView126"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Investment Type"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView125"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Minimum\nAmount"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Select"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="SIP" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="5,000" />
+
+                <CheckBox
+                    android:id="@+id/dsip"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="LUMPSUM" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="500,000" />
+
+                <CheckBox
+                    android:id="@+id/dlum"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="INSURANCE" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="10,000" />
+
+                <CheckBox
+                    android:id="@+id/dinsur"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/nritable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:visibility="gone">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#B79C70">
+
+                <TextView
+                    android:id="@+id/textView1126"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Investment Type"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView1125"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Minimum\nAmount"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView115"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Select"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="SIP" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="100,000" />
+
+                <CheckBox
+                    android:id="@+id/nsip"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView0"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="LUMPSUM" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="5,000,000" />
+
+                <CheckBox
+                    android:id="@+id/nlum"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="INSURANCE" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="500,000" />
+
+                <CheckBox
+                    android:id="@+id/ninves"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/tnccancel"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button2"
+            android:text="Cancel" />
+    </LinearLayout>
+
+
+</FrameLayout>

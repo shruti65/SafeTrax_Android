@@ -72,6 +72,14 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
+                    <Spinner
+                        android:id="@+id/prefix"
+                        android:layout_width="150dp"
+                        android:layout_height="17dp"
+                        android:layout_marginLeft="50dp"
+                        android:backgroundTint="#B79C70"
+                        android:backgroundTintMode="screen" />
+
                     <EditText
                         android:id="@+id/fname"
                         android:layout_width="150dp"
@@ -81,6 +89,7 @@
                         android:background="@drawable/textbox2"
                         android:inputType="textPersonName"
                         android:textSize="15dp"
+                        android:layout_marginTop="10dp"
                         android:hint=" First Name "
                         android:textColorHint="#808080"
                         />
@@ -124,12 +133,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
-                <Spinner
-                    android:id="@+id/occupation"
-                    android:background="@drawable/textbox2"
-                    android:layout_height="17dp"
-                    android:layout_width="150dp"
-                    android:layout_marginLeft="50dp"/>
+
+                    <Spinner
+                        android:id="@+id/clienttype"
+                        android:layout_width="150dp"
+                        android:layout_height="17dp"
+                        android:layout_marginLeft="50dp"
+                        android:backgroundTint="#B79C70"
+                        android:backgroundTintMode="screen" />
                 </LinearLayout>
             </TableRow>
             <TableRow android:layout_marginTop="12dp"
@@ -144,12 +155,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
-                <Spinner
-                    android:id="@+id/sector"
-                    android:background="@drawable/textbox2"
-                    android:layout_height="17dp"
-                    android:layout_width="150dp"
-                    android:layout_marginLeft="50dp"/>
+
+                    <Spinner
+                        android:id="@+id/nationality"
+                        android:layout_width="150dp"
+                        android:layout_height="17dp"
+                        android:layout_marginLeft="50dp"
+                        android:backgroundTint="#B79C70"
+                        android:backgroundTintMode="screen" />
                 </LinearLayout>
             </TableRow>
             <TableRow android:layout_height="30dp"
@@ -158,7 +171,7 @@
                     android:id="@+id/textView8"
                     android:layout_width="match_parent"
                     android:layout_height="25dp"
-                    android:text="PAN:"
+                    android:text="PAN :"
                     android:textSize="15dp"/>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -313,9 +326,85 @@
                         android:layout_width="150dp"
                         android:layout_height="17dp"
                         android:layout_marginLeft="50dp"
-                        android:background="@drawable/textbox2" />
+                        android:backgroundTint="#B79C70"
+                        android:backgroundTintMode="screen" />
                 </LinearLayout>
             </TableRow>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/spouselayout"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:text="Spouse Name :"
+                        android:textSize="15dp"/>
+                    <EditText
+                        android:id="@+id/spousename"
+                        android:layout_width="150dp"
+                        android:layout_height="17dp"
+                        android:layout_marginLeft="50dp"
+                        android:textColor="@color/black"
+                        android:background="@drawable/textbox2"
+                        android:inputType="textPersonName"
+                        android:textSize="15dp"
+                        android:textColorHint="#808080"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/textView120"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:text="Spouse D.O.B. :"
+                        android:textSize="15dp"/>
+                    <EditText
+                        android:id="@+id/spousedob"
+                        android:layout_width="150dp"
+                        android:layout_height="17dp"
+                        android:layout_marginLeft="50dp"
+                        android:textColor="@color/black"
+                        android:background="@drawable/textbox2"
+                        android:inputType="date"
+                        android:textSize="15dp"
+                        android:textColorHint="#808080"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/textView150"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Anniversary \n Date :"
+                        android:textSize="15dp"/>
+                    <EditText
+                        android:id="@+id/anniversarydate"
+                        android:layout_width="150dp"
+                        android:layout_height="17dp"
+                        android:layout_marginLeft="50dp"
+                        android:textColor="@color/black"
+                        android:background="@drawable/textbox2"
+                        android:inputType="textPersonName"
+                        android:textSize="15dp"
+                        android:textColorHint="#808080"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
         </TableLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -362,23 +451,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Save"
-            android:id="@+id/cefsave"
-            android:background="@drawable/button2"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="30dp"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Next"
-            android:id="@+id/cefnext"
-            android:background="@drawable/button2"
-            android:layout_marginLeft="120dp"
-            android:layout_marginTop="30dp"
-            />
+
+            <Button
+                android:id="@+id/cefnext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button2"
+                android:text="Next" />
         </LinearLayout>
     </LinearLayout>
 

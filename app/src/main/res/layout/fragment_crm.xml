@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Crm">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textbox"
+        android:text=" Add Prospect "
+        android:textSize="15dp" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Prospect Name :"
+                android:textSize="15dp" />
+            <EditText
+                android:id="@+id/pname"
+                android:layout_width="150dp"
+                android:layout_height="17dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/black"
+                android:background="@drawable/textbox2"
+                android:inputType="textPersonName"
+                android:textSize="15dp"
+                android:textColorHint="#808080"
+                />
+        </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Reference By :"
+                    android:textSize="15dp" />
+                <Spinner
+                    android:id="@+id/rby"
+                    android:layout_width="150dp"
+                    android:layout_height="17dp"
+                    android:layout_marginLeft="50dp"
+                    android:backgroundTint="#B79C70"
+                    android:backgroundTintMode="screen" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Email :"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="150dp"
+                    android:layout_height="17dp"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/textbox2"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15dp"
+                    android:textColorHint="#808080"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile :"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/mobile"
+                    android:layout_width="150dp"
+                    android:layout_height="17dp"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/textbox2"
+                    android:inputType="phone"
+                    android:textSize="15dp"
+                    android:textColorHint="#808080"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="City :"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/city"
+                    android:layout_width="150dp"
+                    android:layout_height="17dp"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/textbox2"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15dp"
+                    android:textColorHint="#808080"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Address :"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="150dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/textbox2"
+                    android:inputType="textMultiLine"
+                    android:textSize="15dp"
+                    android:textColorHint="#808080"
+                    />
+            </TableRow>
+
+        </TableLayout>
+        <Button
+            android:id="@+id/add"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button2"
+            android:text="Add" />
+    </LinearLayout>
+
+</FrameLayout>

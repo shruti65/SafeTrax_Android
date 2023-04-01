@@ -32,10 +32,13 @@ public class EmployeeDBHelper {
     private final Context ct;
     private DatabaseHelper dbHelper;
     private SQLiteDatabase database;
+
+
     public EmployeeDBHelper(Context context) {
         this.ct = context;
         dbHelper = new DatabaseHelper(ct);
     }
+
     private static class DatabaseHelper extends SQLiteOpenHelper
     {
         DatabaseHelper(Context c)
@@ -63,15 +66,18 @@ public class EmployeeDBHelper {
             onCreate(db);
         }
     }
+
     public EmployeeDBHelper connect() throws SQLException
     {
         database = dbHelper.getWritableDatabase();
         return this;
     }
+
     public void disconnect()
     {
         dbHelper.close();
     }
+
     public void insertEmployee(String empname,String emppass,String dept01)
     {
         this.connect();
@@ -86,6 +92,7 @@ public class EmployeeDBHelper {
         database.insert(tablename3,null,contentValues);
 
     }
+
     public long addtask(String name,String dept,String cate,String task,String group,String plans,String details,String user){
        ContentValues cv= new ContentValues();
        cv.put(EmpDept,dept);
@@ -119,6 +126,7 @@ public class EmployeeDBHelper {
         database.close();
         return list;
     }
+
     public Cursor getallemp(){
         this.connect();
         Cursor c=database.rawQuery("Select * From "+tablename2,null);
@@ -131,6 +139,7 @@ public class EmployeeDBHelper {
         return database.query(tablename2,new String[]
                 {EmpId,EmpName,EmpPass,EmpDept,EmpCate,EmpTask,EmpGroup,EmpPlans,EmpDetails},null,null,null,null,null);
     }
+
     public Cursor retrieveEmployee(String name)throws SQLException
     {
         this.connect();
@@ -142,6 +151,7 @@ public class EmployeeDBHelper {
         }
         return c;
     }
+
     public Boolean checkusername(String username){
         this.connect();
         Cursor cursor=database.rawQuery("Select * from Employee Where EmpName = ?",new String[]{username});
@@ -150,6 +160,7 @@ public class EmployeeDBHelper {
         }
         else  return false;
     }
+
     public Boolean checkusernamepass(String username,String password){
         this.connect();
         Cursor cursor=database.rawQuery("Select * from Employee Where EmpName = ? and EmpPass= ?",new String[]{username,password});
@@ -158,11 +169,13 @@ public class EmployeeDBHelper {
         }
         else  return false;
     }
+
     public boolean deleteEmployee(long id)
     {
         this.connect();
         return database.delete(tablename,EmpId + "=" +id,null)>0;
     }
+
     public boolean updateEmployee(long id,String empname,int emppass)
     {
         this.connect();
@@ -171,4 +184,5 @@ public class EmployeeDBHelper {
         cvalues.put(EmpPass,emppass);
         return database.update(tablename,cvalues,EmpId+"="+id,null)>0;
     }
+
 }

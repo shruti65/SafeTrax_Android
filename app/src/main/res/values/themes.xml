@@ -19,4 +19,9 @@
         <item name="android:textColorPrimary">@color/white</item>
         <item name="colorOnSecondary">@color/white</item>
     </style>
+    <style name="MySeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressBackgroundTint">@color/white</item>
+        <item name="android:progressTint">#4A587B</item>
+        <item name="android:thumbTint">#B79C70</item>
+    </style>
 </resources>

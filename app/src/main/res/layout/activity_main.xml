@@ -85,16 +85,18 @@
                 android:textColor="@color/black" />
 
         </LinearLayout>
+
         <Button
             android:id="@+id/login"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center"
             android:layout_marginTop="40dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/button"
             android:backgroundTintMode="src_over"
-            android:text="Login" />
+            android:text="Login"
+            android:textAlignment="center" />
     </LinearLayout>
 
     <TextView
@@ -105,6 +107,15 @@
         android:layout_marginTop="30dp"
         android:onClick="GetTextfromsql"
         android:text="Forgot Password?"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="true"
+        android:textSize="10dp" />
+    <TextView
+        android:id="@+id/fpass01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Forgot Password? Real"
         android:textColor="#FFFFFF"
         android:textIsSelectable="true"
         android:textSize="10dp" />

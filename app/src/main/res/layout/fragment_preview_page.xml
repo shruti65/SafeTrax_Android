@@ -1,0 +1,1191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PreviewPage">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4A587B"
+        android:gravity="center_horizontal"
+        android:text="Details"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/textbox"
+                android:text=" Personal Details "
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView151"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="Group Name :"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/gname"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="Name :"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="Client Type :"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/ctype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nationality :"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/nation"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Pan :"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/pans"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="KYC\nProcessed:"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/kycs"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Split Group :"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/split"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="DOB :"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="AGE :"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="Maritial\nStatus :"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/mstatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="Family\nSize :"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/fsize"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="No. of\nDependent:"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/nod"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="Qualification:"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/quali"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="Occupation:"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/occu"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:text="Sector :"
+                android:textColor="#B79C70"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/sector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textColorHint="#808080"
+                android:textSize="15dp" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="Firm\nName :"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/firmname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView52"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="Designation:"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/desig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView54"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile No :"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView56"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="Email:"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView58"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="Annual\nIncome :"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/aincome"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textView60"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Family\nIncome :"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/fincome"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView62"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/textbox"
+                android:text=" Contact Details "
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView63"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="Residence"
+                    android:textAllCaps="true"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/residence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView68"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="Address :"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/addresss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView73"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="City :"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/citys"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textView75"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Pin Code:"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/pins"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView77"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="District :"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/districts"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textView79"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="State :"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/states"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView82"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="Country :"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/countrys"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textView83"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:text="TEL No."
+                android:textColor="#B79C70"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textColorHint="#808080"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView163"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="Residence"
+            android:textAllCaps="true"
+            android:textColor="#B79C70"
+            android:textSize="15dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/residence1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textColorHint="#808080"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView168"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="Address :"
+            android:textColor="#B79C70"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/addresss1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textColorHint="#808080"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView173"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="City :"
+            android:textColor="#B79C70"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/citys1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textColorHint="#808080"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView175"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Pin Code:"
+            android:textColor="#B79C70"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/pins1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textColorHint="#808080"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView177"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="District :"
+            android:textColor="#B79C70"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/districts1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textColorHint="#808080"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView179"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="State :"
+            android:textColor="#B79C70"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/states1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textColorHint="#808080"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView821"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="Country :"
+            android:textColor="#B79C70"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/countrys1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textColorHint="#808080"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView183"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="TEL No."
+            android:textColor="#B79C70"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tel1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textColorHint="#808080"
+            android:textSize="15dp" />
+    </LinearLayout>
+</LinearLayout>
+            <TextView
+                android:id="@+id/textView85"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/textbox"
+                android:text=" Other Valuable Details "
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView88"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="Residence\nStatus :"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/resstatus1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView90"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="Reference By :"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/reby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:inputType="textMultiLine"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView92"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="Home\nOwnership:"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/homeown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView94"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicles\nOwned :"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textView95"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="two wheeler"
+                    android:textColor="#4A587B"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textView96"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Four wheeler"
+                    android:textColor="#4A587B"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="Existing\nInvestment:"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/einvestment"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/button3"
+                    android:text="View" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Existing\nInsurance:"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/einsurance"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/button3"
+                    android:text="View" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView101"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="First\nBusiness:"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/fbusiness"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/button3"
+                    android:text="View" />
+
+                <TextView
+                    android:id="@+id/textView102"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Selected\nCriteria:"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/scriteria"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/button3"
+                    android:text="View" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView104"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="Advisor's\nRemark:"
+                    android:textColor="#B79C70"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/advisor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="#808080"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/b5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button2"
+                    android:text="Cancel" />
+
+                <Button
+                    android:id="@+id/b6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button2"
+                    android:text="Approve" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

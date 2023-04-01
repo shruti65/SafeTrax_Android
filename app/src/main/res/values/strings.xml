@@ -5,35 +5,97 @@
         <item>It</item>
         <item>Management</item>
     </string-array>
-    <string-array name="cate1">
-        <item>AFin</item>
-        <item>BFin</item>
-        <item>CFin</item>
+    <string-array name="claimstatus">
+        <item>Select Status</item>
+        <item>Register</item>
+        <item>Document Collected</item>
+        <item>Submission</item>
+        <item>Followup</item>
+        <item>File Received by INS Company</item>
+        <item>Query</item>
+        <item>Rejected</item>
+        <item>Settled</item>
+        <item>Approved</item>
+        <item>Canceled</item>
+        <item>Additional Approval</item>
+
     </string-array>
-    <string-array name="cate">
-        <item>A</item>
-        <item>B</item>
-        <item>C</item>
+    <string-array name="homeowner">
+        <item>Owned By Self/Spouse</item>
+        <item>Owned By Parents/Siblings</item>
+        <item>Rented</item>
+        <item>Paying Guest</item>
+        <item>Company Provided</item>
     </string-array>
-    <string-array name="task">
-        <item>1</item>
-        <item>3</item>
-        <item>5</item>
+    <string-array name="restatus">
+        <item>Indian</item>
+        <item>NRI</item>
     </string-array>
-    <string-array name="group">
-        <item>aa</item>
-        <item>bb</item>
-        <item>cc</item>
+    <string-array name="addtype">
+        <item>Residence</item>
+        <item>Office</item>
     </string-array>
-    <string-array name="plans">
-        <item>AAA</item>
-        <item>BBB</item>
-        <item>CCC</item>
+    <string-array name="maritialstatus">
+        <item>Single</item>
+        <item>Married</item>
+        <item>Divorced</item>
+        <item>Widowed</item>
+    </string-array>
+    <string-array name="clienttype">
+        <item>Individual</item>
+        <item>Non Individual</item>
     </string-array>
     <string-array name="nation">
         <item>Indian</item>
         <item>British</item>
         <item>American</item>
+    </string-array>
+    <string-array name="prefix">
+        <item>Select Prefix</item>
+        <item>Mr</item>
+        <item>Mrs</item>
+        <item>Miss</item>
+    </string-array>
+    <string-array name="crmrby">
+        <item>Select Reference</item>
+        <item>Natural Market</item>
+        <item>Existing Client-</item>
+        <item>SafeInvest Employee-</item>
+        <item>Reference from MD</item>
+        <item>NJ Employee-</item>
+        <item>Cold Call</item>
+        <item>Activity</item>
+        <item>Walk In</item>
+        <item>SafeInvest Employee</item>
+        <item>NJ Employee</item>
+        <item>Default Conversion</item>
+    </string-array>
+    <string-array name="crmctype">
+        <item>NJ Group</item>
+        <item>Prospect</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="crmcommutype">
+        <item>Personal Meet</item>
+        <item>Email</item>
+        <item>Joint Meet</item>
+        <item>Site Visit</item>
+        <item>Telephonic</item>
+        <item>Video Meet</item>
+    </string-array>
+    <string-array name="crmevent">
+        <item>Sales Meet</item>
+        <item>NJ PBC</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="leavereason">
+        <item>Select Reason</item>
+        <item>Going out of City</item>
+        <item>Family Function</item>
+        <item>Marriage</item>
+        <item>Social Function</item>
+        <item>Sick</item>
+        <item>Other Reason</item>
     </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
