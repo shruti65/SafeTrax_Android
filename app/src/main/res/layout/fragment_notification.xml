@@ -30,10 +30,10 @@
     </LinearLayout>
 
     <ScrollView
+        android:id="@+id/scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="40dp"
-        android:id="@+id/scroll">
+        android:layout_marginTop="50dp">
 
         <LinearLayout
             android:id="@+id/linear1"

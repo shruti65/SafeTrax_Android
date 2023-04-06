@@ -29,7 +29,7 @@
             android:orientation="horizontal">
             <Spinner
                 android:id="@+id/product"
-                android:layout_width="150dp"
+                android:layout_width="161dp"
                 android:layout_height="17dp"
                 android:layout_marginLeft="50dp"
                 android:backgroundTint="#B79C70"
@@ -50,7 +50,7 @@
                 android:orientation="horizontal">
                 <Spinner
                     android:id="@+id/purpose"
-                    android:layout_width="150dp"
+                    android:layout_width="161dp"
                     android:layout_height="17dp"
                     android:layout_marginLeft="50dp"
                     android:backgroundTint="#B79C70"
@@ -72,7 +72,7 @@
                 android:orientation="horizontal">
                 <Spinner
                     android:id="@+id/status"
-                    android:layout_width="150dp"
+                    android:layout_width="161dp"
                     android:layout_height="17dp"
                     android:layout_marginLeft="50dp"
                     android:backgroundTint="#B79C70"
@@ -94,7 +94,7 @@
                 android:orientation="horizontal">
                 <Spinner
                     android:id="@+id/sremark"
-                    android:layout_width="150dp"
+                    android:layout_width="161dp"
                     android:layout_height="17dp"
                     android:layout_marginLeft="50dp"
                     android:backgroundTint="#B79C70"
@@ -110,7 +110,7 @@
                 android:id="@+id/textView11"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Next Meeting Date"
+                android:text="Next Meeting Date:"
                 android:textSize="15dp" />
 
             <LinearLayout
@@ -133,7 +133,7 @@
 
                     <EditText
                         android:id="@+id/date"
-                        android:layout_width="100dp"
+                        android:layout_width="115dp"
                         android:layout_height="17dp"
                         android:layout_marginLeft="10dp"
                         android:background="@drawable/textbox2"
@@ -173,15 +173,16 @@
             </LinearLayout>
         </TableRow>
     </TableLayout>
+
     <TextView
+        android:id="@+id/viewlist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/viewlist"
-        android:text="ViewList"
+        android:layout_gravity="center"
         android:layout_marginTop="12dp"
-        android:layout_gravity="right"
-        android:textColor="@color/blue"
-        android:textSize="15dp"/>
+        android:text="ViewList"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
     <Button
         android:id="@+id/add"
         android:layout_width="100dp"

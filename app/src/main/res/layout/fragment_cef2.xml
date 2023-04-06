@@ -11,6 +11,7 @@
         android:gravity="center_horizontal"
         android:text="CEF ENTRY"
         android:textSize="20dp"
+        android:layout_marginRight="38dp"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -36,9 +37,9 @@
 
                 <TextView
                     android:id="@+id/textView5"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
-                    android:text="Qualification :"
+                    android:text="Qualification:"
                     android:textSize="15dp" />
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -48,7 +49,7 @@
                         android:id="@+id/groupname"
                         android:layout_width="150dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:textColor="@color/black"
                         android:background="@drawable/textbox2"
                         android:inputType="textPersonName"
@@ -63,9 +64,9 @@
 
                 <TextView
                     android:id="@+id/textView6"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="25dp"
-                    android:text="Occupation :"
+                    android:text="Occupation:"
                     android:textSize="15dp" />
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -74,9 +75,9 @@
 
                     <Spinner
                         android:id="@+id/occupation"
-                        android:layout_width="150dp"
+                        android:layout_width="161dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:backgroundTint="#B79C70"
                         android:backgroundTintMode="screen" />
                 </LinearLayout>
@@ -86,9 +87,9 @@
 
                 <TextView
                     android:id="@+id/textView7"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="25dp"
-                    android:text="Sector :"
+                    android:text="Sector:"
                     android:textSize="15dp" />
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -97,9 +98,9 @@
 
                     <Spinner
                         android:id="@+id/sector"
-                        android:layout_width="150dp"
+                        android:layout_width="161dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:backgroundTint="#B79C70"
                         android:backgroundTintMode="screen" />
                 </LinearLayout>
@@ -109,9 +110,9 @@
 
                 <TextView
                     android:id="@+id/textView8"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="25dp"
-                    android:text="Firm Name :"
+                    android:text="Firm Name:"
                     android:textSize="15dp" />
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -121,7 +122,7 @@
                         android:id="@+id/pan"
                         android:layout_width="150dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:textColor="@color/black"
                         android:background="@drawable/textbox2"
                         android:inputType="textPersonName"
@@ -135,9 +136,9 @@
 
                 <TextView
                     android:id="@+id/textView82"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="25dp"
-                    android:text="Designation :"
+                    android:text="Designation:"
                     android:textSize="15dp" />
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -147,7 +148,7 @@
                         android:id="@+id/designation"
                         android:layout_width="150dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:textColor="@color/black"
                         android:background="@drawable/textbox2"
                         android:inputType="textPersonName"
@@ -161,9 +162,9 @@
 
                 <TextView
                     android:id="@+id/textView9"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="25dp"
-                    android:text="Mobile No. :"
+                    android:text="Mobile No.:"
                     android:textSize="15dp" />
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -173,7 +174,7 @@
                         android:id="@+id/mobile"
                         android:layout_width="150dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:textColor="@color/black"
                         android:background="@drawable/textbox2"
                         android:inputType="phone"
@@ -187,9 +188,9 @@
 
                 <TextView
                     android:id="@+id/textView10"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="25dp"
-                    android:text="Email ID :"
+                    android:text="Email ID:"
                     android:textSize="15dp" />
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -199,7 +200,7 @@
                         android:id="@+id/email"
                         android:layout_width="150dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:textColor="@color/black"
                         android:background="@drawable/textbox2"
                         android:inputType="textEmailAddress"
@@ -213,9 +214,9 @@
 
                 <TextView
                     android:id="@+id/textView11"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="25dp"
-                    android:text="Annual Income :"
+                    android:text="Annual Income:"
                     android:textSize="15dp" />
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -225,7 +226,7 @@
                         android:id="@+id/annualincome"
                         android:layout_width="150dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:textColor="@color/black"
                         android:background="@drawable/textbox2"
                         android:inputType="number"
@@ -239,9 +240,9 @@
 
                 <TextView
                     android:id="@+id/textView12"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="25dp"
-                    android:text="Family Income :"
+                    android:text="Family Income:"
                     android:textSize="15dp" />
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -251,7 +252,7 @@
                         android:id="@+id/familyincome"
                         android:layout_width="150dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:textColor="@color/black"
                         android:background="@drawable/textbox2"
                         android:inputType="number"
@@ -266,9 +267,9 @@
 
                 <TextView
                     android:id="@+id/textView50"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
-                    android:text="Reference By :"
+                    android:text="Reference By:"
                     android:textSize="15dp" />
 
                 <LinearLayout
@@ -278,9 +279,9 @@
 
                     <Spinner
                         android:id="@+id/referenceby"
-                        android:layout_width="150dp"
+                        android:layout_width="161dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:backgroundTint="#B79C70"
                         android:backgroundTintMode="screen" />
                 </LinearLayout>
@@ -290,9 +291,9 @@
 
                 <TextView
                     android:id="@+id/textView121"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="25dp"
-                    android:text="Reference Name :"
+                    android:text="Reference Name:"
                     android:textSize="15dp" />
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -302,7 +303,7 @@
                         android:id="@+id/refname"
                         android:layout_width="150dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:textColor="@color/black"
                         android:background="@drawable/textbox2"
                         android:inputType="textPersonName"
@@ -322,7 +323,6 @@
                 android:id="@+id/cef2save"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/button2"
                 android:text="Prev" />
@@ -332,7 +332,7 @@
                 android:text="Next"
                 android:id="@+id/cef2next"
                 android:background="@drawable/button2"
-                android:layout_marginLeft="120dp"
+                android:layout_marginLeft="135dp"
                 android:layout_marginTop="30dp"
                 />
         </LinearLayout>

@@ -13,6 +13,7 @@
         android:gravity="center_horizontal"
         android:text="CEF ENTRY"
         android:textSize="20dp"
+        android:layout_marginRight="38dp"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -39,9 +40,9 @@
 
                 <TextView
                     android:id="@+id/textView51"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
-                    android:text="Residence \nStatus :"
+                    android:text="Residence \nStatus:"
                     android:textSize="15dp" />
 
                 <LinearLayout
@@ -51,9 +52,9 @@
 
                     <Spinner
                         android:id="@+id/resstatus"
-                        android:layout_width="150dp"
+                        android:layout_width="161dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:backgroundTint="#B79C70"
                         android:backgroundTintMode="screen" />
                 </LinearLayout>
@@ -65,9 +66,9 @@
 
                 <TextView
                     android:id="@+id/textView8"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
-                    android:text="Home \nOwnership :"
+                    android:text="Home \nOwnership:"
                     android:textSize="15dp" />
 
                 <LinearLayout
@@ -77,9 +78,9 @@
 
                     <Spinner
                         android:id="@+id/homeowner"
-                        android:layout_width="150dp"
+                        android:layout_width="161dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:backgroundTint="#B79C70"
                         android:backgroundTintMode="screen" />
                 </LinearLayout>
@@ -91,9 +92,9 @@
 
                 <TextView
                     android:id="@+id/textView9"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="wrap_content"
-                    android:text="Vehicles Owned\n (In Nos.) :"
+                    android:text="Vehicles Owned\n (In Nos.):"
                     android:textSize="15dp" />
 
                 <LinearLayout
@@ -108,17 +109,16 @@
 
                         <TextView
                             android:id="@+id/textView18"
-                            android:layout_width="wrap_content"
+                            android:layout_width="100dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="50dp"
+                            android:layout_marginLeft="32dp"
                             android:text="Four-Wheeler:"
                             android:textSize="13dp" />
 
                         <EditText
                             android:id="@+id/fourwheel"
-                            android:layout_width="30dp"
+                            android:layout_width="50dp"
                             android:layout_height="17dp"
-                            android:layout_marginLeft="20dp"
                             android:background="@drawable/textbox2"
                             android:inputType="textPersonName"
                             android:textColor="@color/black"
@@ -134,17 +134,16 @@
 
                         <TextView
                             android:id="@+id/textView1"
-                            android:layout_width="wrap_content"
+                            android:layout_width="100dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="50dp"
+                            android:layout_marginLeft="32dp"
                             android:text="Two-Wheeler:"
                             android:textSize="13dp" />
 
                         <EditText
                             android:id="@+id/twowheel"
-                            android:layout_width="30dp"
+                            android:layout_width="50dp"
                             android:layout_height="17dp"
-                            android:layout_marginLeft="20dp"
                             android:background="@drawable/textbox2"
                             android:inputType="textPersonName"
                             android:textColor="@color/black"
@@ -161,9 +160,9 @@
 
                 <TextView
                     android:id="@+id/textView10"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="wrap_content"
-                    android:text="Existing \nInvestment :"
+                    android:text="Existing \nInvestment:"
                     android:textSize="15dp" />
 
                 <LinearLayout
@@ -173,9 +172,9 @@
 
                     <Spinner
                         android:id="@+id/existinvest"
-                        android:layout_width="150dp"
+                        android:layout_width="161dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:backgroundTint="#B79C70"
                         android:backgroundTintMode="screen" />
 
@@ -183,14 +182,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:orientation="horizontal">
 
                         <EditText
                             android:id="@+id/einv"
                             android:layout_width="30dp"
                             android:layout_height="17dp"
-                            android:layout_marginLeft="20dp"
                             android:background="@drawable/textbox2"
                             android:inputType="textPersonName"
                             android:text="0"
@@ -201,14 +199,16 @@
                         <ImageButton
                             android:id="@+id/investimgbtn"
                             android:layout_width="30dp"
+                            android:layout_marginLeft="10dp"
                             android:layout_height="20dp"
                             android:layout_weight="1"
-                            android:src="@android:drawable/ic_input_add" />
+                            android:src="@drawable/addbtncef" />
 
                         <Button
                             android:id="@+id/investview"
                             android:layout_width="40dp"
                             android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
                             android:textAlignment="center"
                             android:textSize="12dp"
                             android:layout_gravity="center"
@@ -224,9 +224,9 @@
 
                 <TextView
                     android:id="@+id/textView19"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="wrap_content"
-                    android:text="Existing \nInsurance :"
+                    android:text="Existing \nInsurance:"
                     android:textSize="15dp" />
 
                 <LinearLayout
@@ -236,9 +236,9 @@
 
                     <Spinner
                         android:id="@+id/existinsurance"
-                        android:layout_width="150dp"
+                        android:layout_width="161dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:backgroundTint="#B79C70"
                         android:backgroundTintMode="screen" />
 
@@ -246,14 +246,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:orientation="horizontal">
 
                         <EditText
                             android:id="@+id/einsure"
                             android:layout_width="30dp"
                             android:layout_height="17dp"
-                            android:layout_marginLeft="20dp"
                             android:background="@drawable/textbox2"
                             android:inputType="textPersonName"
                             android:text="0"
@@ -264,13 +263,15 @@
                         <ImageButton
                             android:id="@+id/insureimagebtn"
                             android:layout_width="30dp"
+                            android:layout_marginLeft="10dp"
                             android:layout_height="20dp"
                             android:layout_weight="1"
-                            android:src="@android:drawable/ic_input_add" />
+                            android:src="@drawable/addbtncef" />
 
                         <Button
                             android:id="@+id/insureview"
                             android:layout_width="40dp"
+                            android:layout_marginLeft="10dp"
                             android:layout_height="20dp"
                             android:textAlignment="center"
                             android:textSize="12dp"
@@ -286,9 +287,9 @@
 
                 <TextView
                     android:id="@+id/textView50"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
-                    android:text="First Business :"
+                    android:text="First Business:"
                     android:textSize="15dp" />
 
                 <LinearLayout
@@ -303,7 +304,7 @@
                       android:text="Select"
                       android:textAlignment="center"
                       android:gravity="center"
-                      android:layout_marginLeft="50dp"
+                      android:layout_marginLeft="32dp"
                       android:background="@drawable/button3"/>
                 </LinearLayout>
             </TableRow>
@@ -313,9 +314,9 @@
 
                 <TextView
                     android:id="@+id/textView17"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="wrap_content"
-                    android:text="Investment\nStrategies :"
+                    android:text="Investment\nStrategies:"
                     android:textSize="15dp" />
 
                 <LinearLayout
@@ -325,9 +326,9 @@
 
                     <Spinner
                         android:id="@+id/investstrat"
-                        android:layout_width="150dp"
+                        android:layout_width="161dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:backgroundTint="#B79C70"
                         android:backgroundTintMode="screen" />
 
@@ -336,13 +337,13 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:orientation="horizontal"
-                        android:layout_marginLeft="50dp">
+                        android:layout_marginLeft="32dp">
 
                         <EditText
                             android:id="@+id/invstratext"
                             android:layout_width="30dp"
                             android:layout_height="17dp"
-                            android:layout_marginLeft="20dp"
+
                             android:background="@drawable/textbox2"
                             android:inputType="textPersonName"
                             android:text="0"
@@ -354,8 +355,9 @@
                             android:id="@+id/invstratimagebtn"
                             android:layout_width="30dp"
                             android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
                             android:layout_weight="1"
-                            android:src="@android:drawable/ic_input_add" />
+                            android:src="@drawable/addbtncef" />
 
                         <Button
                             android:id="@+id/investstratview"
@@ -363,6 +365,7 @@
                             android:layout_height="20dp"
                             android:textAlignment="center"
                             android:textSize="12dp"
+                            android:layout_marginLeft="10dp"
                             android:layout_gravity="center"
                             android:background="@drawable/button3"
                             android:text="View" />
@@ -374,9 +377,9 @@
 
                 <TextView
                     android:id="@+id/textView13"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="wrap_content"
-                    android:text="Advisor's \nRemark :"
+                    android:text="Advisor's \nRemark:"
                     android:textSize="15dp" />
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -387,7 +390,7 @@
                         android:id="@+id/advremark"
                         android:layout_width="150dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:textColor="@color/black"
                         android:background="@drawable/textbox2"
                         android:inputType="textMultiLine"
@@ -400,23 +403,27 @@
                  <LinearLayout android:layout_width="wrap_content"
                                android:layout_height="wrap_content"
                      android:orientation="horizontal">
+
                      <TextView
                          android:id="@+id/tnc"
-                         android:layout_width="wrap_content"
+                         android:layout_width="130dp"
                          android:layout_height="wrap_content"
-                         android:text="Term's and Conditions:"
                          android:layout_marginTop="10dp"
-                         android:textColor="#4A587B"
-                         android:textSize="15dp" />
+                         android:text="Term's and Conditions"
+                         android:textColor="@color/white"
+                         android:textSize="15dp"
+                         android:textStyle="bold" />
+
                      <TextView
                          android:id="@+id/preview"
-                         android:layout_marginLeft="50dp"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
-                         android:text="Preview"
+                         android:layout_marginLeft="32dp"
                          android:layout_marginTop="10dp"
-                         android:textColor="#4A587B"
-                         android:textSize="15dp" />
+                         android:text="Preview"
+                         android:textColor="@color/white"
+                         android:textSize="15dp"
+                         android:textStyle="bold" />
                  </LinearLayout>
 
 
@@ -431,7 +438,6 @@
                 android:id="@+id/cef4prev"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/button2"
                 android:text="Prev" />
@@ -441,14 +447,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="24dp"
                 android:text="send" />
 
             <Button
                 android:id="@+id/cef4add"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="24dp"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/button2"
                 android:text="Add" />

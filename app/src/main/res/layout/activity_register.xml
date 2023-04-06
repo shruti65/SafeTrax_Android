@@ -34,7 +34,7 @@
         android:layout_marginLeft="100dp"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPersonName" />
+        android:inputType="textPassword" />
 
 
     <Spinner

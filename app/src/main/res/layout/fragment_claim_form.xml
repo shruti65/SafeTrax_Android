@@ -13,6 +13,7 @@
         android:gravity="center_horizontal"
         android:text="CLAIM ENTRY"
         android:textSize="20dp"
+        android:layout_marginRight="38dp"
         android:textStyle="bold" />
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,15 +35,15 @@
             <TableRow android:layout_height="30dp">
                 <TextView
                     android:id="@+id/textView5"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
-                    android:text="Date of Loss/Event :"
+                    android:text="Date of Loss/Event:"
                     android:textSize="15dp"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:layout_marginLeft="30dp">
+                    android:layout_marginLeft="32dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -51,11 +52,10 @@
                             android:id="@+id/datepicker"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:src="@drawable/cal" />
                         <EditText
                             android:id="@+id/ldate"
-                            android:layout_width="100dp"
+                            android:layout_width="115dp"
                             android:layout_height="17dp"
                             android:layout_marginLeft="10dp"
                             android:background="@drawable/textbox2"
@@ -72,15 +72,15 @@
                 android:layout_marginTop="12dp">
                 <TextView
                     android:id="@+id/textView"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
-                    android:text="Date of Intimation :"
+                    android:text="Date of Intimation:"
                     android:textSize="15dp"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:layout_marginLeft="30dp">
+                    android:layout_marginLeft="32dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -89,11 +89,10 @@
                             android:id="@+id/datepicker1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:src="@drawable/cal" />
                         <EditText
                             android:id="@+id/idate"
-                            android:layout_width="100dp"
+                            android:layout_width="115dp"
                             android:layout_height="17dp"
                             android:layout_marginLeft="10dp"
                             android:background="@drawable/textbox2"
@@ -110,11 +109,11 @@
                 android:layout_marginTop="12dp">
                 <TextView
                     android:id="@+id/textView8"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="25dp"
-                    android:text="Claim Settlement Type :"
+                    android:text="Claim Settlement Type:"
                     android:textSize="15dp"/>
-                <RadioGroup android:layout_marginLeft="30dp"
+                <RadioGroup android:layout_marginLeft="32dp"
                     android:orientation="vertical"
                     android:id="@+id/cstype">
 
@@ -155,15 +154,15 @@
             <TableRow android:layout_height="30dp">
                 <TextView
                     android:id="@+id/textView4"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
-                    android:text="Name :"
+                    android:text="Name:"
                     android:textSize="15dp"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:layout_marginLeft="10dp">
+                    android:layout_marginLeft="32dp">
                     <EditText
                         android:id="@+id/name"
                         android:layout_width="150dp"
@@ -187,12 +186,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:layout_marginLeft="10dp">
+                    android:layout_marginLeft="32dp">
                     <CheckBox
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkbox"
-                        android:text=" Same as Policy Holder"/>
+                        android:text="Same as Policy\nHolder"/>
                 </LinearLayout>
             </TableRow>
             <TableRow android:layout_height="30dp"
@@ -200,15 +199,15 @@
                 android:id="@+id/relation">
                 <TextView
                     android:id="@+id/textView10"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
-                    android:text="Relationship\n(with policy holder) :"
+                    android:text="Relationship\n(with policy holder):"
                     android:textSize="15dp"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:layout_marginLeft="10dp">
+                    android:layout_marginLeft="32dp">
                     <EditText
                         android:id="@+id/rname"
                         android:layout_width="150dp"
@@ -225,15 +224,15 @@
                 android:layout_marginTop="12dp">
                 <TextView
                     android:id="@+id/textView11"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
-                    android:text="Email ID :"
+                    android:text="Email ID:"
                     android:textSize="15dp"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:layout_marginLeft="10dp">
+                    android:layout_marginLeft="32dp">
                     <EditText
                         android:id="@+id/email"
                         android:layout_width="150dp"
@@ -250,15 +249,15 @@
                 android:layout_marginTop="12dp">
                 <TextView
                     android:id="@+id/textView12"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
-                    android:text="Mobile :"
+                    android:text="Mobile:"
                     android:textSize="15dp"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:layout_marginLeft="10dp">
+                    android:layout_marginLeft="32dp">
                     <EditText
                         android:id="@+id/mobile"
                         android:layout_width="150dp"
@@ -275,15 +274,15 @@
                 android:layout_marginTop="12dp">
                 <TextView
                     android:id="@+id/textView13"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
-                    android:text="Place of Incident :"
+                    android:text="Place of Incident:"
                     android:textSize="15dp"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:layout_marginLeft="10dp">
+                    android:layout_marginLeft="32dp">
                     <EditText
                         android:id="@+id/pofinci"
                         android:layout_width="150dp"
@@ -300,15 +299,15 @@
                 android:layout_marginTop="12dp">
                 <TextView
                     android:id="@+id/textView14"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
-                    android:text="Incident :"
+                    android:text="Incident:"
                     android:textSize="15dp"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:layout_marginLeft="10dp">
+                    android:layout_marginLeft="32dp">
                     <EditText
                         android:id="@+id/incident"
                         android:layout_width="150dp"
@@ -325,15 +324,15 @@
                 android:layout_marginTop="12dp">
                 <TextView
                     android:id="@+id/textView15"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
-                    android:text="Surveyor Name :"
+                    android:text="Surveyor Name:"
                     android:textSize="15dp"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:layout_marginLeft="10dp">
+                    android:layout_marginLeft="32dp">
                     <EditText
                         android:id="@+id/sname"
                         android:layout_width="150dp"
@@ -350,15 +349,15 @@
                 android:layout_marginTop="12dp">
                 <TextView
                     android:id="@+id/textView16"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
-                    android:text="Garage Name :"
+                    android:text="Garage Name:"
                     android:textSize="15dp"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:layout_marginLeft="10dp">
+                    android:layout_marginLeft="32dp">
                     <EditText
                         android:id="@+id/gname"
                         android:layout_width="150dp"
@@ -384,7 +383,7 @@
             android:text=" Add Status "
             android:textAlignment="center"
             android:gravity="center"
-            android:layout_marginLeft="150dp"
+            android:layout_marginLeft="165dp"
             android:layout_marginTop="15dp"
             android:background="@drawable/button3"/>
         <LinearLayout

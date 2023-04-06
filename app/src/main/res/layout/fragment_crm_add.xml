@@ -56,9 +56,9 @@
                 <TableRow android:layout_height="30dp">
                     <TextView
                         android:id="@+id/textView5"
-                        android:layout_width="100dp"
+                        android:layout_width="130dp"
                         android:layout_height="match_parent"
-                        android:text="Client Type :"
+                        android:text="Client Type:"
                         android:textSize="15dp" />
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -66,9 +66,9 @@
                         android:orientation="horizontal">
                     <Spinner
                         android:id="@+id/ctype"
-                        android:layout_width="150dp"
+                        android:layout_width="161dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:backgroundTint="#B79C70"
                         android:backgroundTintMode="screen" />
                     </LinearLayout>
@@ -78,9 +78,9 @@
                     android:layout_marginTop="12dp">
                     <TextView
                         android:id="@+id/textView6"
-                        android:layout_width="100dp"
+                        android:layout_width="130dp"
                         android:layout_height="match_parent"
-                        android:text="Select FA :"
+                        android:text="Select FA:"
                         android:textSize="15dp" />
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -88,9 +88,9 @@
                         android:orientation="horizontal">
                     <Spinner
                         android:id="@+id/fa"
-                        android:layout_width="150dp"
+                        android:layout_width="161dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:backgroundTint="#B79C70"
                         android:backgroundTintMode="screen" />
                     </LinearLayout>
@@ -100,9 +100,9 @@
                     android:layout_marginTop="12dp">
                     <TextView
                         android:id="@+id/textView7"
-                        android:layout_width="100dp"
+                        android:layout_width="130dp"
                         android:layout_height="match_parent"
-                        android:text="Group :"
+                        android:text="Group:"
                         android:textSize="15dp" />
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -110,9 +110,9 @@
                         android:orientation="horizontal">
                     <Spinner
                         android:id="@+id/group"
-                        android:layout_width="150dp"
+                        android:layout_width="161dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:backgroundTint="#B79C70"
                         android:backgroundTintMode="screen" />
                     </LinearLayout>
@@ -122,9 +122,9 @@
                     android:layout_marginTop="12dp">
                     <TextView
                         android:id="@+id/textView8"
-                        android:layout_width="110dp"
+                        android:layout_width="130dp"
                         android:layout_height="match_parent"
-                        android:text="Communication\nType :"
+                        android:text="Communication\nType:"
                         android:textSize="15dp" />
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -132,9 +132,9 @@
                         android:orientation="horizontal">
                     <Spinner
                         android:id="@+id/commutype"
-                        android:layout_width="150dp"
+                        android:layout_width="161dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:backgroundTint="#B79C70"
                         android:backgroundTintMode="screen" />
                     </LinearLayout>
@@ -146,15 +146,15 @@
 
                     <TextView
                         android:id="@+id/textView11"
-                        android:layout_width="100dp"
+                        android:layout_width="130dp"
                         android:layout_height="wrap_content"
-                        android:text="Meeting Date"
+                        android:text="Meeting Date:"
                         android:textSize="15dp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:orientation="horizontal">
 
 
@@ -171,7 +171,7 @@
 
                             <EditText
                                 android:id="@+id/date"
-                                android:layout_width="100dp"
+                                android:layout_width="115dp"
                                 android:layout_height="17dp"
                                 android:layout_marginLeft="10dp"
                                 android:background="@drawable/textbox2"
@@ -189,19 +189,19 @@
                     android:layout_marginTop="12dp">
                     <TextView
                         android:id="@+id/textView61"
-                        android:layout_width="100dp"
+                        android:layout_width="130dp"
                         android:layout_height="match_parent"
-                        android:text="Meeting Time :"
+                        android:text="Meeting Time:"
                         android:textSize="15dp" />
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
                         <EditText
                             android:id="@+id/mtime"
                             android:layout_width="150dp"
                             android:layout_height="17dp"
-                            android:layout_marginLeft="50dp"
+                            android:layout_marginLeft="32dp"
                             android:textColor="@color/black"
                             android:background="@drawable/textbox2"
                             android:inputType="textPersonName"
@@ -215,19 +215,19 @@
                     android:layout_marginTop="12dp">
                     <TextView
                         android:id="@+id/textView62"
-                        android:layout_width="100dp"
+                        android:layout_width="130dp"
                         android:layout_height="match_parent"
-                        android:text="No. of Minute :"
+                        android:text="No. of Minute:"
                         android:textSize="15dp" />
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
                         <EditText
                             android:id="@+id/nofmin"
                             android:layout_width="150dp"
                             android:layout_height="17dp"
-                            android:layout_marginLeft="50dp"
+                            android:layout_marginLeft="32dp"
                             android:textColor="@color/black"
                             android:background="@drawable/textbox2"
                             android:inputType="textPersonName"
@@ -241,21 +241,23 @@
                     android:layout_marginTop="12dp">
                     <TextView
                         android:id="@+id/textView63"
-                        android:layout_width="100dp"
+                        android:layout_width="130dp"
                         android:layout_height="match_parent"
-                        android:text="Status :"
+                        android:text="Status:"
                         android:textSize="15dp" />
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
+
                         <TextView
+                            android:id="@+id/crmtadd"
                             android:layout_width="150dp"
                             android:layout_height="17dp"
-                            android:layout_marginLeft="50dp"
+                            android:layout_marginLeft="32dp"
+                            android:text="Add"
                             android:textSize="15dp"
-                            android:id="@+id/crmtadd"
-                            android:text="Add"/>
+                            android:textStyle="bold" />
                     </LinearLayout>
                 </TableRow>
 
@@ -263,20 +265,22 @@
                     android:layout_marginTop="12dp">
                     <TextView
                         android:id="@+id/textView64"
-                        android:layout_width="100dp"
+                        android:layout_width="130dp"
                         android:layout_height="match_parent"
-                        android:text="VADA :"
+                        android:text="VADA:"
                         android:textSize="15dp" />
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
+
                         <TextView
                             android:layout_width="150dp"
                             android:layout_height="17dp"
-                            android:layout_marginLeft="50dp"
+                            android:layout_marginLeft="32dp"
+                            android:text="Add"
                             android:textSize="15dp"
-                            android:text="Add"/>
+                            android:textStyle="bold" />
                     </LinearLayout>
                 </TableRow>
 
@@ -296,21 +300,21 @@
         </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/linear02"
         android:visibility="gone"
         android:orientation="vertical">
         <TableLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp">
         <TableRow android:layout_height="30dp">
             <TextView
                 android:id="@+id/textView51"
-                android:layout_width="150dp"
+                android:layout_width="130dp"
                 android:layout_height="match_parent"
-                android:text="Event :"
+                android:text="Event:"
                 android:textSize="15dp" />
             <LinearLayout
                 android:layout_width="match_parent"
@@ -318,9 +322,9 @@
                 android:orientation="horizontal">
                 <Spinner
                     android:id="@+id/event1"
-                    android:layout_width="150dp"
+                    android:layout_width="161dp"
                     android:layout_height="17dp"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="32dp"
                     android:backgroundTint="#B79C70"
                     android:backgroundTintMode="screen" />
             </LinearLayout>
@@ -331,15 +335,15 @@
 
                 <TextView
                     android:id="@+id/textView1"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="wrap_content"
-                    android:text="From Date"
+                    android:text="From Date:"
                     android:textSize="15dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="32dp"
                     android:orientation="horizontal">
 
 
@@ -356,7 +360,7 @@
 
                         <EditText
                             android:id="@+id/fdate"
-                            android:layout_width="100dp"
+                            android:layout_width="115dp"
                             android:layout_height="17dp"
                             android:layout_marginLeft="10dp"
                             android:background="@drawable/textbox2"
@@ -376,15 +380,15 @@
 
                 <TextView
                     android:id="@+id/textView16"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="wrap_content"
-                    android:text="To Date"
+                    android:text="To Date:"
                     android:textSize="15dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="32dp"
                     android:orientation="horizontal">
 
 
@@ -401,7 +405,7 @@
 
                         <EditText
                             android:id="@+id/todate"
-                            android:layout_width="100dp"
+                            android:layout_width="115dp"
                             android:layout_height="17dp"
                             android:layout_marginLeft="10dp"
                             android:background="@drawable/textbox2"

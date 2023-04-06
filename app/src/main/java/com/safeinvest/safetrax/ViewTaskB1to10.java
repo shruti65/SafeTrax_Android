@@ -30,7 +30,7 @@ public class ViewTaskB1to10 extends Fragment {
             textView.setText("HELLO");
             Button button=new Button(getContext());
             button.setText("view");
-            textView.setWidth(600);
+            textView.setWidth(640);
             linearLayout.setOrientation(LinearLayout.HORIZONTAL);
             linearLayout.addView(textView);
             linearLayout.addView(button);

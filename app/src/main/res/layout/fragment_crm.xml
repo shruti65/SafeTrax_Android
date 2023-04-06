@@ -25,125 +25,149 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp">
         <TableRow
-            android:layout_width="match_parent"
             android:layout_height="wrap_content" >
             <TextView
-                android:layout_width="100dp"
+                android:layout_width="130dp"
                 android:layout_height="wrap_content"
-                android:text="Prospect Name :"
+                android:text="Prospect Name:"
                 android:textSize="15dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
             <EditText
                 android:id="@+id/pname"
                 android:layout_width="150dp"
                 android:layout_height="17dp"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="32dp"
                 android:textColor="@color/black"
                 android:background="@drawable/textbox2"
                 android:inputType="textPersonName"
                 android:textSize="15dp"
                 android:textColorHint="#808080"
                 />
+            </LinearLayout>
         </TableRow>
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:layout_marginTop="12dp">
                 <TextView
-                    android:layout_width="100dp"
+                    android:layout_width="130dp"
                     android:layout_height="wrap_content"
-                    android:text="Reference By :"
+                    android:text="Reference By:"
                     android:textSize="15dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
                 <Spinner
                     android:id="@+id/rby"
-                    android:layout_width="150dp"
+                    android:layout_width="161dp"
                     android:layout_height="17dp"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="32dp"
                     android:backgroundTint="#B79C70"
                     android:backgroundTintMode="screen" />
+                </LinearLayout>
             </TableRow>
             <TableRow
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp">
                 <TextView
-                    android:layout_width="100dp"
+                    android:layout_width="130dp"
                     android:layout_height="wrap_content"
-                    android:text="Email :"
+                    android:text="Email:"
                     android:textSize="15dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
                 <EditText
                     android:id="@+id/email"
                     android:layout_width="150dp"
                     android:layout_height="17dp"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="32dp"
                     android:textColor="@color/black"
                     android:background="@drawable/textbox2"
                     android:inputType="textEmailAddress"
                     android:textSize="15dp"
                     android:textColorHint="#808080"
                     />
+                </LinearLayout>
             </TableRow>
             <TableRow
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp">
                 <TextView
-                    android:layout_width="100dp"
+                    android:layout_width="130dp"
                     android:layout_height="wrap_content"
-                    android:text="Mobile :"
+                    android:text="Mobile:"
                     android:textSize="15dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
                 <EditText
                     android:id="@+id/mobile"
                     android:layout_width="150dp"
                     android:layout_height="17dp"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="32dp"
                     android:textColor="@color/black"
                     android:background="@drawable/textbox2"
                     android:inputType="phone"
                     android:textSize="15dp"
                     android:textColorHint="#808080"
                     />
+                </LinearLayout>
             </TableRow>
             <TableRow
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp">
                 <TextView
-                    android:layout_width="100dp"
+                    android:layout_width="130dp"
                     android:layout_height="wrap_content"
-                    android:text="City :"
+                    android:text="City:"
                     android:textSize="15dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
                 <EditText
                     android:id="@+id/city"
                     android:layout_width="150dp"
                     android:layout_height="17dp"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="32dp"
                     android:textColor="@color/black"
                     android:background="@drawable/textbox2"
                     android:inputType="textEmailAddress"
                     android:textSize="15dp"
                     android:textColorHint="#808080"
                     />
+                </LinearLayout>
             </TableRow>
             <TableRow
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp">
                 <TextView
-                    android:layout_width="100dp"
+                    android:layout_width="130dp"
                     android:layout_height="wrap_content"
-                    android:text="Address :"
+                    android:text="Address:"
                     android:textSize="15dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
                 <EditText
                     android:id="@+id/address"
                     android:layout_width="150dp"
                     android:layout_height="37dp"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="32dp"
                     android:textColor="@color/black"
                     android:background="@drawable/textbox2"
                     android:inputType="textMultiLine"
                     android:textSize="15dp"
                     android:textColorHint="#808080"
                     />
+                </LinearLayout>
             </TableRow>
 
         </TableLayout>

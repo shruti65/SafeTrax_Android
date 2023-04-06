@@ -31,11 +31,11 @@ public class LeaveList extends Fragment {
             textView.setText("  Request ID");
             Button button=new Button(getContext());
             button.setText("view");
-            button.setBackground(getResources().getDrawable(R.drawable.smallbtn));
+            //button.setBackground(getResources().getDrawable(R.drawable.smallbtn));
             textView.setWidth(600);
             linearLayout.setOrientation(LinearLayout.HORIZONTAL);
             linearLayout.addView(textView);
-            linearLayout.setBackground(getResources().getDrawable(R.drawable.listback));
+           // linearLayout.setBackground(getResources().getDrawable(R.drawable.listback));
             linearLayout.addView(button);
             linear.addView(linearLayout);
             button.setOnClickListener(new View.OnClickListener() {

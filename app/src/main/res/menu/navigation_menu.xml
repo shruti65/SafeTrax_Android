@@ -30,7 +30,7 @@
             <item
                 android:id="@+id/menu_cef"
                 android:icon="@android:drawable/checkbox_on_background"
-                android:title="ADD cef" />
+                android:title="Add CEF" />
             <item
                 android:id="@+id/menu_cefList"
                 android:icon="@android:drawable/ic_menu_agenda"
@@ -38,13 +38,27 @@
         </menu>
     </item>
     <item
-        android:id="@+id/menu_claim"
-        android:icon="@android:drawable/ic_menu_compass"
-        android:title="Claim" />
-    <item
-        android:id="@+id/menu_crm"
+        android:id="@+id/menu_claims"
         android:icon="@android:drawable/ic_menu_agenda"
-        android:title="CRM" />
+        android:title="Claim">
+        <menu>
+            <item
+            android:id="@+id/menu_claim"
+            android:icon="@android:drawable/ic_menu_compass"
+            android:title="Claim" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menu_crms"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="CRM">
+        <menu>
+            <item
+                android:id="@+id/menu_crm"
+                android:icon="@android:drawable/ic_menu_agenda"
+                android:title="CRM" />
+        </menu>
+    </item>
     <item
         android:id="@+id/menu_leave"
         android:icon="@android:drawable/ic_input_get"

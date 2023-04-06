@@ -10,8 +10,9 @@
         android:layout_height="wrap_content"
         android:background="#4A587B"
         android:gravity="center_horizontal"
-        android:text="Task Module"
+        android:text="TASK ENTRY"
         android:textSize="20dp"
+        android:layout_marginRight="38dp"
         android:textStyle="bold" />
     <LinearLayout
         android:id="@+id/linearlayout"
@@ -30,11 +31,13 @@
             android:textSize="15dp" />
 
         <RadioGroup
+            android:id="@+id/rg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:orientation="horizontal"
-            android:id="@+id/rg">
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
             <RadioButton
                 android:id="@+id/onetime"
                 android:layout_width="wrap_content"
@@ -42,6 +45,7 @@
                 android:text="One Time"
                 android:textColor="@color/white"
                 android:theme="@style/RadioButtonStyle" />
+
             <RadioButton
                 android:id="@+id/recurring"
                 android:layout_width="wrap_content"
@@ -51,8 +55,8 @@
                 android:theme="@style/RadioButtonStyle" />
         </RadioGroup>
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:id="@+id/lv1"
             android:orientation="vertical">
             <TableLayout
@@ -62,83 +66,109 @@
                 <TableRow android:layout_height="30dp">
                     <TextView
                         android:id="@+id/textView5"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:text="Department:"
+                        android:textSize="15dp" />
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Department :"
-                        android:textSize="15dp" />
+                        android:orientation="vertical">
                     <Spinner
                         android:id="@+id/dept"
-                        android:layout_width="150dp"
+                        android:layout_width="161dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:backgroundTint="#B79C70"
                         android:backgroundTintMode="screen" />
+                    </LinearLayout>
                 </TableRow>
                 <TableRow android:layout_height="30dp"
                     android:layout_marginTop="12dp">
                     <TextView
                         android:id="@+id/textView8"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:text="Category:"
+                        android:textSize="15dp" />
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Category :"
-                        android:textSize="15dp" />
+                        android:orientation="vertical">
                     <Spinner
                         android:id="@+id/category"
-                        android:layout_width="150dp"
+                        android:layout_width="161dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:backgroundTint="#B79C70"
                         android:backgroundTintMode="screen" />
+                    </LinearLayout>
                 </TableRow>
                 <TableRow android:layout_height="30dp"
                     android:layout_marginTop="12dp">
                     <TextView
                         android:id="@+id/textView6"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:text="Task:"
+                        android:textSize="15dp" />
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Task :"
-                        android:textSize="15dp" />
+                        android:orientation="vertical">
                     <Spinner
                         android:id="@+id/task"
-                        android:layout_width="150dp"
+                        android:layout_width="161dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:backgroundTint="#B79C70"
                         android:backgroundTintMode="screen" />
+                    </LinearLayout>
                 </TableRow>
                 <TableRow android:layout_height="30dp"
                     android:layout_marginTop="12dp">
                     <TextView
                         android:id="@+id/textView10"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:text="TAT:"
+                        android:textSize="15dp" />
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="TAT :"
-                        android:textSize="15dp" />
+                        android:orientation="vertical">
                     <TextView
                         android:id="@+id/tat"
-                        android:layout_width="wrap_content"
+                        android:layout_width="140dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:text="0"
+                        android:textAlignment="viewEnd"
                         android:textColor="@color/white"
                         android:textSize="15dp" />
+                    </LinearLayout>
                 </TableRow>
                 <TableRow android:layout_height="30dp"
                     android:layout_marginTop="12dp">
 
                     <TextView
                         android:id="@+id/textView7"
-                        android:layout_width="match_parent"
+                        android:layout_width="130dp"
                         android:layout_height="wrap_content"
-                        android:text="Group :"
+                        android:text="Group:"
                         android:textSize="15dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
                     <Spinner
                         android:id="@+id/group"
-                        android:layout_width="150dp"
+                        android:layout_width="161dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:backgroundTint="#B79C70"
                         android:backgroundTintMode="screen" />
+                    </LinearLayout>
                 </TableRow>
 
 
@@ -146,87 +176,107 @@
                     android:layout_marginTop="12dp">
                     <TextView
                         android:id="@+id/textView9"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:text="Account:"
+                        android:textSize="15dp" />
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Account :"
-                        android:textSize="15dp" />
+                        android:orientation="vertical">
                     <Spinner
                         android:id="@+id/sp2"
-                        android:layout_width="150dp"
+                        android:layout_width="161dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:backgroundTint="#B79C70"
                         android:backgroundTintMode="screen" />
+                    </LinearLayout>
                 </TableRow>
                 <TableRow android:layout_height="30dp"
                     android:layout_marginTop="12dp">
                     <TextView
                         android:id="@+id/textView11"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:text="Task Details:"
+                        android:textSize="15dp" />
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Task Details :"
-                        android:textSize="15dp" />
+                        android:orientation="vertical">
                     <EditText
                         android:id="@+id/taskdetails"
                         android:layout_width="150dp"
                         android:layout_height="47dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:background="@drawable/textbox2"
                         android:inputType="textMultiLine"
                         android:textColor="@color/black"
                         android:textColorHint="#808080"
                         android:textSize="15dp" />
+                    </LinearLayout>
                 </TableRow>
                 <TableRow android:layout_height="30dp"
                     android:layout_marginTop="12dp">
                     <TextView
                         android:id="@+id/textView13"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:text="Amount:"
+                        android:textSize="15dp" />
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Amount :"
-                        android:textSize="15dp" />
+                        android:orientation="vertical">
                     <EditText
                         android:id="@+id/amount"
                         android:layout_width="150dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:textColor="@color/black"
                         android:background="@drawable/textbox2"
                         android:inputType="number"
                         android:textSize="15dp"
                         android:textColorHint="#808080"
                         />
+                    </LinearLayout>
                 </TableRow>
                 <TableRow android:layout_height="30dp"
                     android:layout_marginTop="12dp">
                     <TextView
                         android:id="@+id/textView12"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:text="Doer:"
+                        android:textSize="15dp" />
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Doer :"
-                        android:textSize="15dp" />
+                        android:orientation="vertical">
                     <Spinner
                         android:id="@+id/doer"
-                        android:layout_width="150dp"
+                        android:layout_width="161dp"
                         android:layout_height="17dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="32dp"
                         android:backgroundTint="#B79C70"
                         android:backgroundTintMode="screen" />
+                    </LinearLayout>
                 </TableRow>
 
                 <TableRow android:layout_height="30dp"
                     android:layout_marginTop="12dp">
                     <TextView
                         android:id="@+id/textView14"
-                        android:layout_width="match_parent"
+                        android:layout_width="130dp"
                         android:layout_height="match_parent"
-                        android:text="Assign Date :"
+                        android:text="Assign Date:"
                         android:textSize="15dp" />
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal"
-                        android:layout_marginLeft="50dp">
+                        android:layout_marginLeft="32dp">
 
                         <ImageView
                             android:id="@+id/datepicker1"
@@ -236,7 +286,7 @@
 
                         <EditText
                             android:id="@+id/date"
-                            android:layout_width="100dp"
+                            android:layout_width="115dp"
                             android:layout_height="17dp"
                             android:layout_marginLeft="10dp"
                             android:background="@drawable/textbox2"
@@ -251,17 +301,16 @@
                 <LinearLayout
                     android:id="@+id/buttonlayout"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content">
 
                     <Button
                         android:id="@+id/addtaskbtn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="50dp"
                         android:layout_marginTop="30dp"
+                        android:layout_marginLeft="50dp"
                         android:background="@drawable/button2"
-                        android:text="ADD" />
+                        android:text="Add" />
 
                     <Button
                         android:id="@+id/canceltaskbtn"
@@ -290,56 +339,71 @@
         <TableRow android:layout_height="30dp">
             <TextView
                 android:id="@+id/textView15"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:text="Periodical:"
+                android:textSize="15dp" />
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Periodical :"
-                android:textSize="15dp" />
+                android:orientation="vertical">
             <Spinner
                 android:id="@+id/periodical"
-                android:layout_width="150dp"
+                android:layout_width="161dp"
                 android:layout_height="17dp"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="32dp"
                 android:backgroundTint="#B79C70"
                 android:backgroundTintMode="screen" />
+            </LinearLayout>
         </TableRow>
             <TableRow android:layout_height="30dp"
                 android:layout_marginTop="12dp">
                 <TextView
                     android:id="@+id/textView16"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:text="Task:"
+                    android:textSize="15dp" />
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Task :"
-                    android:textSize="15dp" />
+                    android:orientation="vertical">
                 <EditText
                     android:id="@+id/tasks"
                     android:layout_width="150dp"
                     android:layout_height="47dp"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="32dp"
                     android:background="@drawable/textbox2"
                     android:inputType="textMultiLine"
                     android:textColor="@color/black"
                     android:textColorHint="#808080"
                     android:textSize="15dp" />
+                </LinearLayout>
             </TableRow>
             <TableRow android:layout_height="30dp"
                 android:layout_marginTop="12dp">
                 <TextView
                     android:id="@+id/textView19"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:text="TAT:"
+                    android:textSize="15dp" />
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="TAT :"
-                    android:textSize="15dp" />
+                    android:orientation="vertical">
                 <EditText
                     android:id="@+id/tat1"
                     android:layout_width="150dp"
                     android:layout_height="17dp"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="32dp"
                     android:textColor="@color/black"
                     android:background="@drawable/textbox2"
                     android:inputType="number"
                     android:textSize="15dp"
                     android:textColorHint="#808080"
                     />
+                </LinearLayout>
             </TableRow>
             <TableRow android:layout_height="30dp"
                 android:layout_marginTop="12dp">
@@ -347,13 +411,13 @@
                     android:id="@+id/textView18"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Start Date :"
+                    android:text="Start Date:"
                     android:textSize="15dp" />
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
-                    android:layout_marginLeft="50dp">
+                    android:layout_marginLeft="32dp">
 
                     <ImageView
                         android:id="@+id/datepicker2"
@@ -363,7 +427,7 @@
 
                     <EditText
                         android:id="@+id/startdate"
-                        android:layout_width="100dp"
+                        android:layout_width="115dp"
                         android:layout_height="17dp"
                         android:layout_marginLeft="10dp"
                         android:background="@drawable/textbox2"
@@ -379,15 +443,15 @@
                 android:layout_marginTop="12dp">
                 <TextView
                     android:id="@+id/textView17"
-                    android:layout_width="match_parent"
+                    android:layout_width="130dp"
                     android:layout_height="match_parent"
-                    android:text="End Date :"
+                    android:text="End Date:"
                     android:textSize="15dp" />
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
-                    android:layout_marginLeft="50dp">
+                    android:layout_marginLeft="32dp">
 
                     <ImageView
                         android:id="@+id/datepicker3"
@@ -397,7 +461,7 @@
 
                     <EditText
                         android:id="@+id/enddate"
-                        android:layout_width="100dp"
+                        android:layout_width="115dp"
                         android:layout_height="17dp"
                         android:layout_marginLeft="10dp"
                         android:background="@drawable/textbox2"
@@ -413,88 +477,113 @@
                 android:layout_marginTop="12dp">
                 <TextView
                     android:id="@+id/textView20"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:text="Group:"
+                    android:textSize="15dp" />
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Group :"
-                    android:textSize="15dp" />
+                    android:orientation="vertical">
                 <Spinner
                     android:id="@+id/group1"
-                    android:layout_width="150dp"
+                    android:layout_width="161dp"
                     android:layout_height="17dp"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="32dp"
                     android:backgroundTint="#B79C70"
                     android:backgroundTintMode="screen" />
+                </LinearLayout>
             </TableRow>
             <TableRow android:layout_height="30dp"
                 android:layout_marginTop="12dp">
                 <TextView
                     android:id="@+id/textView21"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:text="Account:"
+                    android:textSize="15dp" />
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Account :"
-                    android:textSize="15dp" />
+                    android:orientation="vertical">
                 <Spinner
                     android:id="@+id/account1"
-                    android:layout_width="150dp"
+                    android:layout_width="161dp"
                     android:layout_height="17dp"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="32dp"
                     android:backgroundTint="#B79C70"
                     android:backgroundTintMode="screen" />
+                </LinearLayout>
             </TableRow>
             <TableRow android:layout_height="30dp"
                 android:layout_marginTop="12dp">
             <TextView
                 android:id="@+id/textView22"
-                android:layout_width="match_parent"
+                android:layout_width="130dp"
                 android:layout_height="match_parent"
-                android:text="Add Details :"
+                android:text="Add Details:"
                 android:textSize="15dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
             <EditText
                 android:id="@+id/adddetails"
                 android:layout_width="150dp"
                 android:layout_height="47dp"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="32dp"
                 android:background="@drawable/textbox2"
                 android:inputType="textMultiLine"
                 android:textColor="@color/black"
                 android:textColorHint="#808080"
                 android:textSize="15dp" />
+                </LinearLayout>
             </TableRow>
             <TableRow android:layout_height="30dp"
                 android:layout_marginTop="12dp">
                 <TextView
                     android:id="@+id/textView24"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:text="Doer:"
+                    android:textSize="15dp" />
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Doer :"
-                    android:textSize="15dp" />
+                    android:orientation="vertical">
                 <Spinner
                     android:id="@+id/doer1"
-                    android:layout_width="150dp"
+                    android:layout_width="161dp"
                     android:layout_height="17dp"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="32dp"
                     android:backgroundTint="#B79C70"
                     android:backgroundTintMode="screen" />
+                </LinearLayout>
             </TableRow>
             <TableRow android:layout_height="30dp"
                 android:layout_marginTop="12dp">
                 <TextView
                     android:id="@+id/textView23"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:text="Amount:"
+                    android:textSize="15dp" />
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Amount :"
-                    android:textSize="15dp" />
+                    android:orientation="vertical">
                 <EditText
                     android:id="@+id/amount1"
                     android:layout_width="150dp"
                     android:layout_height="17dp"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="32dp"
                     android:textColor="@color/black"
                     android:background="@drawable/textbox2"
                     android:inputType="number"
                     android:textSize="15dp"
                     android:textColorHint="#808080"
                     />
+                </LinearLayout>
             </TableRow>
         </TableLayout>
         <LinearLayout
