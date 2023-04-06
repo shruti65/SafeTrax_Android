@@ -12,6 +12,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.Spinner;
@@ -43,7 +44,7 @@ public class CefViewList extends Fragment {
     private List<String> fil = new ArrayList<>();
     EditText tv01;
     int j=0;
-
+    ImageButton reload;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -53,6 +54,7 @@ public class CefViewList extends Fragment {
         linear=(LinearLayout) view.findViewById(R.id.linear);
         filter=(Spinner)view.findViewById(R.id.filter);
         tv01=(EditText) view.findViewById(R.id.tv02);
+        reload=(ImageButton)view.findViewById(R.id.reload);
 
         String url="http://15.1.1.134:9000/cef/client";
         JsonArrayRequest jsonArrayRequest=new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
@@ -75,7 +77,7 @@ public class CefViewList extends Fragment {
                     fil= filtered.stream().distinct().collect(Collectors.toList());
                 }
 
-
+                
                 ArrayAdapter<String> array_Adapter4= new ArrayAdapter<String>(getContext(), R.layout.spinner01,fil);
                 filter.setAdapter(array_Adapter4);
                 filter.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -158,74 +160,7 @@ public class CefViewList extends Fragment {
                         }
                         else
                         {
-                            linear.removeAllViews();
-                            JsonArrayRequest jsonArrayRequest1 = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
-                                @Override
-                                public void onResponse(JSONArray response) {
-                                    System.out.println(response.length());
-                                    final String str01=String.valueOf(response.length());
-                                    tv01.setText(str01);
-                                    for (int i = 0; i < response.length(); i++) {
-                                        try {
-                                            JSONObject jsonObject01 = response.getJSONObject(i);
-                                                LinearLayout linearLayout = new LinearLayout(getContext());
-                                                TextView textView = new TextView(getContext());
-                                                String name = jsonObject01.getString("firstName") + " " + jsonObject01.getString("middleName") + " " + jsonObject01.getString("lastName");
-                                                textView.setText(name);
-                                                Button button = new Button(getContext());
-                                                button.setText("view");
-                                                textView.setWidth(640);
-                                                linearLayout.setOrientation(LinearLayout.HORIZONTAL);
-                                                linearLayout.addView(textView);
-                                                linearLayout.addView(button);
-                                                linear.addView(linearLayout);
-                                                button.setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-                                                        ViewGroup viewGroup = view.findViewById(android.R.id.content);
-                                                        View dialogview = LayoutInflater.from(v.getContext()).inflate(R.layout.fragment_cef_list_alert, viewGroup, false);
-                                                        TextView textView = (TextView) dialogview.findViewById(R.id.changetext);
-                                                        TextView gname = (TextView) dialogview.findViewById(R.id.gname);
-                                                        TextView fa = (TextView) dialogview.findViewById(R.id.fadvisor);
-                                                        TextView status = (TextView) dialogview.findViewById(R.id.status);
-                                                        TextView suser = (TextView) dialogview.findViewById(R.id.suser);
-                                                        TextView sdate = (TextView) dialogview.findViewById(R.id.sdate);
-                                                        TextView mobile = (TextView) dialogview.findViewById(R.id.mobile);
-                                                        TextView email = (TextView) dialogview.findViewById(R.id.email);
-                                                        LinearLayout linearLayout = (LinearLayout) dialogview.findViewById(R.id.linear1);
-                                                        textView.setText(" CEF Details ");
-                                                        try {
-                                                            gname.setText(jsonObject01.getString("groupName"));
-                                                            fa.setText(jsonObject01.getString("fa"));
-                                                            status.setText(jsonObject01.getString("status"));
-                                                            suser.setText(jsonObject01.getString("postuser"));
-                                                            sdate.setText(jsonObject01.getString("statusDate"));
-                                                            mobile.setText(jsonObject01.getString("mobileNo"));
-                                                            email.setText(jsonObject01.getString("emailid"));
-
-                                                        } catch (JSONException e) {
-                                                            e.printStackTrace();
-                                                        }
-                                                        builder.setView(dialogview);
-                                                        AlertDialog alertDialog = builder.create();
-                                                        alertDialog.show();
-                                                    }
-                                                });
-
-                                        } catch (JSONException e) {
-                                            e.printStackTrace();
-                                        }
-                                    }
-                                }
-
-                            }, new Response.ErrorListener() {
-                                @Override
-                                public void onErrorResponse(VolleyError error) {
-                                }
-                            });
-                            RequestQueue requestQueue1 = Volley.newRequestQueue(getContext());
-                            requestQueue1.add(jsonArrayRequest1);
+                           refresh(view);
                         }
                         j=0;
                     }
@@ -242,10 +177,86 @@ public class CefViewList extends Fragment {
         });
         RequestQueue requestQueue= Volley.newRequestQueue(getContext());
         requestQueue.add(jsonArrayRequest);
-
-
-
+        reload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                filter.setSelection(0);
+                refresh(view);
+            }
+        });
 
         return view;
+    }
+
+    private void refresh(View view) {
+        linear.removeAllViews();
+        String url="http://15.1.1.134:9000/cef/client";
+        JsonArrayRequest jsonArrayRequest1 = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
+            @Override
+            public void onResponse(JSONArray response) {
+                System.out.println(response.length());
+                final String str01=String.valueOf(response.length());
+                tv01.setText(str01);
+                for (int i = 0; i < response.length(); i++) {
+                    try {
+                        JSONObject jsonObject01 = response.getJSONObject(i);
+                        LinearLayout linearLayout = new LinearLayout(getContext());
+                        TextView textView = new TextView(getContext());
+                        String name = jsonObject01.getString("firstName") + " " + jsonObject01.getString("middleName") + " " + jsonObject01.getString("lastName");
+                        textView.setText(name);
+                        Button button = new Button(getContext());
+                        button.setText("view");
+                        textView.setWidth(640);
+                        linearLayout.setOrientation(LinearLayout.HORIZONTAL);
+                        linearLayout.addView(textView);
+                        linearLayout.addView(button);
+                        linear.addView(linearLayout);
+                        button.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+                                ViewGroup viewGroup = view.findViewById(android.R.id.content);
+                                View dialogview = LayoutInflater.from(v.getContext()).inflate(R.layout.fragment_cef_list_alert, viewGroup, false);
+                                TextView textView = (TextView) dialogview.findViewById(R.id.changetext);
+                                TextView gname = (TextView) dialogview.findViewById(R.id.gname);
+                                TextView fa = (TextView) dialogview.findViewById(R.id.fadvisor);
+                                TextView status = (TextView) dialogview.findViewById(R.id.status);
+                                TextView suser = (TextView) dialogview.findViewById(R.id.suser);
+                                TextView sdate = (TextView) dialogview.findViewById(R.id.sdate);
+                                TextView mobile = (TextView) dialogview.findViewById(R.id.mobile);
+                                TextView email = (TextView) dialogview.findViewById(R.id.email);
+                                LinearLayout linearLayout = (LinearLayout) dialogview.findViewById(R.id.linear1);
+                                textView.setText(" CEF Details ");
+                                try {
+                                    gname.setText(jsonObject01.getString("groupName"));
+                                    fa.setText(jsonObject01.getString("fa"));
+                                    status.setText(jsonObject01.getString("status"));
+                                    suser.setText(jsonObject01.getString("postuser"));
+                                    sdate.setText(jsonObject01.getString("statusDate"));
+                                    mobile.setText(jsonObject01.getString("mobileNo"));
+                                    email.setText(jsonObject01.getString("emailid"));
+
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                }
+                                builder.setView(dialogview);
+                                AlertDialog alertDialog = builder.create();
+                                alertDialog.show();
+                            }
+                        });
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+            }
+        });
+        RequestQueue requestQueue1 = Volley.newRequestQueue(getContext());
+        requestQueue1.add(jsonArrayRequest1);
     }
 }
